@@ -4,8 +4,8 @@ from pydantic import BaseModel
 app = FastAPI()
 
 class ArtistCreate(BaseModel):
-    name = str
-    genre = str | None = None
+    name: str
+    genre: str | None = None
 
 fake_artists = [
     {"id": 1, "name": "Sawyer Utah", "genre": "Indie Pop"},
